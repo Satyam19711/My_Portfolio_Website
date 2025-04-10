@@ -1,0 +1,131 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img{
+    margin-top: 50px;
+    width: 20%;
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    width: 70%;
+}
+
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background: linear-gradient(264deg,#DF8908 -5.09%, #B415FF 106.26%);
+    cursor: pointer;
+}
+
+.hero-connect:hover{
+   border: 2px solid #FFF;
+}
+
+.hero-resume a{
+    padding:25px 75px;
+    border-radius: 50px;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+ 
+.hero-resume a:hover{
+    border-color: #b415FF;   
+
+}
+
+
+@media (max-width: 768px){
+    .hero img{
+        margin-top: 120px;
+        width: 260px;
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .hero p{
+        width:60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+
+    .hero-action{
+        
+        gap: 16px;
+        font-size: 18px;
+        margin-bottom: 50px;
+        font-weight: 500;
+    }
+
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+}
+
+       .hero-resume{
+        padding: 20px 30px;
+        border-radius: 40px; 
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+
+       
+}
+}
+
+@media (max-width: 480px){
+    .hero-action{
+        flex-direction: column;
+        gap: 35px;
+        font-size: 16px;
+    }
+}
