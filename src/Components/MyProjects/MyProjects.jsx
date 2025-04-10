@@ -2,7 +2,7 @@ import React from 'react'
 import './MyProjects.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 
-import yt from '../../Assets/ytttttt.png'
+import ytttttt from '../../Assets/ytttttt.png'
 import spotify from '../../Assets/spotifyyyy.png'
 
 const MyProjects = () => {
@@ -21,7 +21,7 @@ const MyProjects = () => {
             
 
             <h3>Youtube Clone</h3>
-            <img src={yt} alt="" />
+            <img src={ytttttt} alt="" />
 
             <p>YouTube clone built using React and Tailwind CSS. It features a clean, responsive UI with video playback support, category-based browsing like news and gaming, and a familiar layout. The project focuses on UI/UX design and seamless user interaction for a realistic experience.</p>
             <div className="link">
