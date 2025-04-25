@@ -2,8 +2,8 @@ import React from "react";
 import "./MyProjects.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 
-import yt from "../../Assets/yt.png";
-import spotify from "../../Assets/spotifyyyy.png";
+import yt from "../../assets/yt.png";
+import spotify from "../../assets/spotifyyyy.png";
 
 const MyProjects = () => {
   return (
