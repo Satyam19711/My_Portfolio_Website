@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="hero-resume">
           <a
-            href="https://drive.google.com/drive/folders/1XKlLuTJmUspG4bjgGNEfmC1v0rHDHRhy?usp=sharing"
+            href="src/assets/SatyamMaurya-FullStackWebDeveloper-real.pdf"
             target="_blank"
           >
             My Resume
