@@ -7,28 +7,62 @@ import call_icon from "../../assets/call_icon.svg";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithubSquare } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
+
     const formData = new FormData(event.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    if (!name || !email || !message) {
+      toast.warn("⚠️ Please fill all the fields before submitting.", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "colored",
+      });
+      return;
+    }
 
     formData.append("access_key", "51d79378-1fd0-4652-8d7d-34fbfa85038f");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
 
-    if (res.success) {
-      alert(res.message);
+      if (res.success) {
+        toast.success("✅ Message sent successfully!", {
+          position: "top-center",
+          autoClose: 2000,
+          theme: "colored",
+        });
+        event.target.reset();
+      } else {
+        toast.error("❌ Something went wrong. Try again later.", {
+          position: "top-center",
+          autoClose: 2000,
+          theme: "colored",
+        });
+      }
+    } catch (error) {
+      toast.error("🚫 Network error. Please check your connection.", {
+        position: "top-center",
+        autoClose: 2000,
+        theme: "colored",
+      });
     }
   };
 
@@ -62,7 +96,6 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/satyam-maurya-94a750252/"
                 target="_blank"
               >
-                {" "}
                 <CiLinkedin />
               </a>
 
@@ -76,23 +109,28 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
 
           <label htmlFor="">Your Email</label>
           <input type="email" placeholder="Enter your email" name="email" />
+
           <label htmlFor="">Write your message here</label>
           <textarea
             name="message"
             rows="8"
             placeholder="Enter your message"
           ></textarea>
+
           <button type="submit" className="contact-submit">
             Submit now
           </button>
         </form>
       </div>
+
+      <ToastContainer />
     </div>
   );
 };

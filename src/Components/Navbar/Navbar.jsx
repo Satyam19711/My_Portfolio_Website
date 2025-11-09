@@ -17,10 +17,16 @@ const Navbar = () => {
     menuRef.current.style.right = "-350px";
   };
 
+  const handleMenuClick = (section) => {
+    setMenu(section);
+    closeMenu();
+  };
+
   return (
     <div className="navbar">
       <h1 className="nav-logo">Satyam's Portfolio</h1>
       <img src={menu_open} onClick={openMenu} className="nav-mob-open" alt="" />
+
       <ul ref={menuRef} className="nav-menu">
         <img
           src={menu_close}
@@ -28,40 +34,44 @@ const Navbar = () => {
           alt=""
           className="nav-mob-close"
         />
+
         <li>
           <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
+            <p onClick={() => handleMenuClick("home")}>Home</p>
           </AnchorLink>
-          {menu === "home" ? <img src={underline} alt="" /> : <></>}
+          {menu === "home" ? <img src={underline} alt="" /> : null}
         </li>
+
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About Me</p>
+            <p onClick={() => handleMenuClick("about")}>About Me</p>
           </AnchorLink>
-          {menu === "about" ? <img src={underline} alt="" /> : <></>}
+          {menu === "about" ? <img src={underline} alt="" /> : null}
         </li>
+
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#projects">
-            <p onClick={() => setMenu("project")}>Projects</p>
+            <p onClick={() => handleMenuClick("project")}>Projects</p>
           </AnchorLink>
-          {menu === "project" ? <img src={underline} alt="" /> : <></>}
+          {menu === "project" ? <img src={underline} alt="" /> : null}
         </li>
+
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#git">
-            <p onClick={() => setMenu("git")}>Git</p>
+            <p onClick={() => handleMenuClick("git")}>Git</p>
           </AnchorLink>
-          {menu === "git" ? <img src={underline} alt="" /> : <></>}
+          {menu === "git" ? <img src={underline} alt="" /> : null}
         </li>
+
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
+            <p onClick={() => handleMenuClick("contact")}>Contact</p>
           </AnchorLink>
-          {menu === "contact" ? <img src={underline} alt="" /> : <></>}
+          {menu === "contact" ? <img src={underline} alt="" /> : null}
         </li>
       </ul>
 
       <div className="nav-connect">
-        {" "}
         <AnchorLink className="anchor-link" offset={50} href="#contact">
           Connect With Me
         </AnchorLink>

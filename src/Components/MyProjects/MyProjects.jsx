@@ -1,8 +1,7 @@
 import React from "react";
 import "./MyProjects.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-
-import yt from "../../assets/yt.png";
+import yt from "../../assets/Yt-home.png";
 import spotify from "../../assets/spotifyyyy.png";
 
 const MyProjects = () => {

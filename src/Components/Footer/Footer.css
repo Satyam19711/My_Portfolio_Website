@@ -64,12 +64,6 @@
   font-size: 18px;
 }
 
-.footer-bottom-right {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 50px;
-}
-
 .footer-email-input:hover {
   border: 2px solid white;
 }
