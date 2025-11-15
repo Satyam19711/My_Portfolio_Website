@@ -163,3 +163,8 @@
     margin-bottom: 10px;
   }
 }
+
+body:not(.dark-mode) .project-left:hover,
+.project-right:hover {
+  background-image: none;
+}
