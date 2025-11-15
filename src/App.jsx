@@ -7,18 +7,20 @@ import MyProjects from "./Components/MyProjects/MyProjects";
 import GitStatus from "./Components/GitStatus/GitStatus";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import useOnlineUsers from "./utils/useOnlineUsers";
+import { logVisitor } from "./utils/logVisitor";
 
 import { initTheme } from "./utils/theme";
-import { useNotifyOnVisit } from "./utils/notifyVisitor";
-import useFirebaseVisitorCount from "./utils/useFirebaseVisitorCount";
 
 const App = () => {
-  useNotifyOnVisit();
-
-  const count = useFirebaseVisitorCount();
+  const onlineUsers = useOnlineUsers();
 
   useEffect(() => {
     initTheme();
+  }, []);
+
+  useEffect(() => {
+    logVisitor();
   }, []);
 
   const [icon, setIcon] = useState(
@@ -69,11 +71,11 @@ const App = () => {
         {icon}
       </button>
 
-      <div className="visitor-badge" style={{ userSelect: "none" }}>
-        👁️ <span>{count ?? "..."}</span>
+      <div className="visitor-badge">
+        👁️ <span>{onlineUsers}</span>
       </div>
 
-      <div className="visitor-tooltip">Live Visitor Count</div>
+      <div className="visitor-tooltip">Live Users Online</div>
 
       <button
         id="scrollTopBtn"

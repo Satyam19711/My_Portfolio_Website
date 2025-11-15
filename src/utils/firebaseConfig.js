@@ -1,11 +1,11 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyBFhn-hCiwtRyYsWs4fAeMLyMkmsBtfhrE",
-  authDomain: "portfolio-visitor-count-d7e0c.firebaseapp.com",
+  apiKey: "AIzaSyDjTNmYoKgGSsB1Zr1HXlm5A63is5CC2fE",
+  authDomain: "portfolio-visiter.firebaseapp.com",
   databaseURL:
-    "https://portfolio-visitor-count-d7e0c-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "portfolio-visitor-count-d7e0c",
-  storageBucket: "portfolio-visitor-count-d7e0c.firebasestorage.app",
-  messagingSenderId: "426605136078",
-  appId: "1:426605136078:web:327ca6779c2b6c92a5e89f",
-  measurementId: "G-S0321LBR4V",
+    "https://portfolio-visiter-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "portfolio-visiter",
+  storageBucket: "portfolio-visiter.firebasestorage.app",
+  messagingSenderId: "1049979309694",
+  appId: "1:1049979309694:web:61aa40b6e2fba46281522f",
+  measurementId: "G-VZHM4DGZJ1",
 };
