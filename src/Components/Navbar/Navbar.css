@@ -99,18 +99,18 @@
     right: -350px;
   }
 
+  .anchor-link p {
+    color: white !important;
+  }
+
   .nav-menu li {
     font-size: 30px;
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
   }
-
-  body:not(.dark-mode) .anchor-link p {
-    color: #000 !important;
-  }
 }
 
 body:not(.dark-mode) .anchor-link p {
-  color: #000 !important;
+  color: #000;
 }
