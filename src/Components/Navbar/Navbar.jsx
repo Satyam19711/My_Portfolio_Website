@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import underline from "../../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import menu_open from "../../assets/menu_open.svg";
-import menu_close from "../../assets/menu_close.svg";
+import open_new from "../../assets/open_new.png";
+import close_new from "../../assets/close_new.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -25,11 +25,11 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h1 className="nav-logo">Satyam's Portfolio</h1>
-      <img src={menu_open} onClick={openMenu} className="nav-mob-open" alt="" />
+      <img src={open_new} onClick={openMenu} className="nav-mob-open" alt="" />
 
       <ul ref={menuRef} className="nav-menu">
         <img
-          src={menu_close}
+          src={close_new}
           onClick={closeMenu}
           alt=""
           className="nav-mob-close"

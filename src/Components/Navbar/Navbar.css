@@ -69,7 +69,9 @@
   .nav-mob-open {
     display: block;
     position: fixed;
-    right: 30px;
+    right: 25px;
+    width: 10%;
+    top: 25px;
   }
   .nav-mob-close {
     display: block;
@@ -102,6 +104,10 @@
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
+  }
+
+  body:not(.dark-mode) .anchor-link p {
+    color: #000 !important;
   }
 }
 
