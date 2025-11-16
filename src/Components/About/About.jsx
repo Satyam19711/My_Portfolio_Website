@@ -20,19 +20,22 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am a dedicated Full Stack Web Developer from India, passionate
-              about building both the front-end and back-end of modern web
-              applications. My skill set includes HTML, CSS, JavaScript, React,
-              Node.js, Express, MongoDB, and Python. I enjoy creating seamless
-              user experiences and robust server-side logic.
+              I am a dynamic and adaptable Full Stack Web Developer from India,
+              skilled in the MERN stack with a strong focus on JavaScript,
+              React.js, and Node.js. I enjoy building both the front-end and
+              back-end of modern web applications, creating smooth user
+              experiences and reliable server-side logic. I also leverage
+              Generative AI tools to speed up development, boost creativity, and
+              improve the overall quality of my work.
             </p>
 
             <p>
-              With a strong foundation in both design and logic, I strive to
-              build web solutions that are not just beautiful but also efficient
-              and scalable. I’m constantly learning new technologies and best
-              practices, and I’m always open to exciting opportunities that help
-              me grow and contribute meaningfully.
+              With solid problem-solving skills and attention to detail, I aim
+              to build web solutions that are clean, efficient, and scalable. I
+              work with technologies like HTML, CSS, Express, and MongoDB while
+              constantly learning new tools and best practices. I’m always open
+              to exciting opportunities that help me grow further, apply my
+              skills, and contribute meaningfully to impactful projects.
             </p>
           </div>
 
@@ -40,16 +43,18 @@ const About = () => {
             <div className="about-skill-left">
               <h4 className="skill-tech-heading">Tech Skills</h4>
               <div className="about-skill">
-                <p>HTML & CSS</p>
+                <p>HTML5 & CSS3</p>
               </div>
+
               <div className="about-skill">
                 <p>JavaScript</p>
               </div>
+
               <div className="about-skill">
-                <p>Python</p>
+                <p>React.js</p>
               </div>
               <div className="about-skill">
-                <p>React</p>
+                <p>Redux</p>
               </div>
               <div className="about-skill">
                 <p>Node.js</p>
@@ -62,13 +67,19 @@ const About = () => {
               <div className="about-skill">
                 <p>MongoDB</p>
               </div>
-
               <div className="about-skill">
-                <p>Chakra UI</p>
+                <p>Mongoose</p>
+              </div>
+              <div className="about-skill">
+                <p>Responsive Design</p>
               </div>
 
               <div className="about-skill">
-                <p>material UI</p>
+                <p>RESTful APIs</p>
+              </div>
+
+              <div className="about-skill">
+                <p>Git & GitHub</p>
               </div>
             </div>
 
@@ -88,16 +99,29 @@ const About = () => {
                 <p>Replit</p>
               </div>
               <div className="about-teck-tools">
-                <p>netlify</p>
+                <p>Netlify</p>
               </div>
               <div className="about-teck-tools">
                 <p>Vercel</p>
               </div>
               <div className="about-teck-tools">
+                <p>Render</p>
+              </div>
+              <div className="about-teck-tools">
                 <p>Postman</p>
               </div>
               <div className="about-teck-tools">
-                <p>Codepen</p>
+                <p>Thunder Client</p>
+              </div>
+
+              <div className="about-teck-tools">
+                <p>MongoDB Atlas</p>
+              </div>
+              <div className="about-teck-tools">
+                <p>Firebase</p>
+              </div>
+              <div className="about-teck-tools">
+                <p>CodePen</p>
               </div>
             </div>
           </div>

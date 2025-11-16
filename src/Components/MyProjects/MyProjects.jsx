@@ -14,18 +14,18 @@ const MyProjects = () => {
 
       <div className="project-section">
         <div className="project-left">
-          <h3>Youtube Clone</h3>
+          <h3>Youtube Clone App</h3>
           <img src={yt} alt="" />
 
           <p>
-            YouTube clone built using React and Tailwind CSS. It features a
-            clean, responsive UI with video playback support, category-based
-            browsing like news and gaming, and a familiar layout. The project
-            focuses on UI/UX design and seamless user interaction for a
-            realistic experience.
+            YouTube clone built using React and Tailwind CSS. It offers a clean,
+            fully responsive UI with real video playback, a working search bar
+            powered by live API data, and category-based browsing like news and
+            gaming. The project focuses on smooth navigation, improved UI/UX,
+            and a realistic YouTube-style viewing experience.
           </p>
           <div className="link">
-            <a href="https://ytubee.vercel.app/" target="_blank">
+            <a href="https://satyam1919-youtube.vercel.app" target="_blank">
               Live link
             </a>
             <a href="https://github.com/Satyam19711/React_YT" target="_blank">
@@ -35,18 +35,21 @@ const MyProjects = () => {
         </div>
 
         <div className="project-right">
-          <h3>Spotify Clone</h3>
+          <h3> Spotify Full-Stack Music App</h3>
           <img src={spotify} alt="" />
           <p>
-            Welcome to the Spotify Clone project! This is a frontend application
-            built to replicate the core features of the popular music streaming
-            platform, utilizing React and Tailwind CSS with a focus on
-            responsive design, album sections, and basic music playback
-            controls.
+            Built as a full-stack music streaming app with a React frontend and
+            Node.js/Express backend. Features responsive album and playlist
+            sections, smooth music playback controls, secure audio/image uploads
+            via Cloudinary, authentication, and an Admin panel to
+            add/update/delete songs and manage content.
           </p>
 
           <div className="link">
-            <a href="https://satyamspotifyclone.netlify.app/" target="_blank">
+            <a
+              href="https://satyam1919-spotify-clone.vercel.app"
+              target="_blank"
+            >
               Live link
             </a>
             <a
