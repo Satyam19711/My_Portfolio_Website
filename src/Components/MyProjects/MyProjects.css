@@ -164,7 +164,15 @@
   }
 }
 
-body:not(.dark-mode) .project-left:hover,
-.project-right:hover {
+body:not(.dark-mode) .project-left:hover {
   background-image: none;
+}
+body:not(.dark-mode) .project-right:hover {
+  background-image: none;
+}
+body:not(.dark-mode) .project-left {
+  border: 2px solid black;
+}
+body:not(.dark-mode) .project-right {
+  border: 2px solid black;
 }
