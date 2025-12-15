@@ -76,7 +76,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          @ 2025 Satyam Maurya. All right reserved.
+          @ 2026 Satyam Maurya. All right reserved.
         </p>
       </div>
 

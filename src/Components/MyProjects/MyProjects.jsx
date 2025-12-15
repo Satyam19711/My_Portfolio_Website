@@ -3,6 +3,7 @@ import "./MyProjects.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import yt from "../../assets/Yt-home.png";
 import spotify from "../../assets/spotifyyyy.png";
+import us from "../../assets/us.png";
 
 const MyProjects = () => {
   return (
@@ -54,6 +55,33 @@ const MyProjects = () => {
             </a>
             <a
               href="https://github.com/Satyam19711/spotify-clone"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <div className="project-third">
+          <h3>Satyaveda Hospital</h3>
+          <img src={us} alt="Hospital Project" />
+
+          <p>
+            Designed as a full-stack hospital appointment platform using a React
+            frontend and Node.js/Express backend, featuring multi-role
+            authentication, doctor discovery, slot-based booking, online
+            payments, dashboards, profile management, and a responsive user
+            interface for all users.
+          </p>
+
+          <div className="link">
+            <a
+              href="https://satyam1919-user-satyaveda-hospital-full-stack-app.vercel.app"
+              target="_blank"
+            >
+              Live link
+            </a>
+            <a
+              href="https://github.com/Satyam19711/Satyaveda-Hospital-Full-Stack-App"
               target="_blank"
             >
               Github

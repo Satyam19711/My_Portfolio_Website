@@ -218,3 +218,45 @@ body:not(.dark-mode) ::-webkit-scrollbar-track {
     box-shadow: 0 0 20px #60a5fa;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .navbar {
+    margin: 20px 40px !important;
+  }
+
+  .nav-menu {
+    gap: 30px !important;
+  }
+
+  .nav-connect {
+    padding: 7px 21px !important;
+    font-size: 11px !important;
+    margin-left: 10px !important;
+    margin-right: -20px !important;
+  }
+
+  .about-sections {
+    display: flex !important;
+    gap: 40px !important;
+    margin-left: -200px !important;
+  }
+
+  .about-left img {
+    width: 300px !important;
+    height: auto !important;
+  }
+
+  .footer {
+    margin: 60px 40px !important;
+  }
+
+  .footer-top {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .footer-email-input {
+    max-width: 420px !important;
+  }
+}
