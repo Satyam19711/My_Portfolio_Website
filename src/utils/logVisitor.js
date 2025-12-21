@@ -26,8 +26,6 @@ export function logVisitor() {
     };
 
     set(newVisitorRef, visitorData);
-
-    console.log("Visitor stored:", visitorData);
   } catch (error) {
     console.error("Visitor log error:", error);
   }

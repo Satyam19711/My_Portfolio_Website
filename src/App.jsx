@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
@@ -9,17 +8,15 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import useOnlineUsers from "./utils/useOnlineUsers";
 import { logVisitor } from "./utils/logVisitor";
-
 import { initTheme } from "./utils/theme";
+import Snowfall from "react-snowfall";
+import "./App.css";
 
 const App = () => {
   const onlineUsers = useOnlineUsers();
 
   useEffect(() => {
     initTheme();
-  }, []);
-
-  useEffect(() => {
     logVisitor();
   }, []);
 
@@ -33,28 +30,29 @@ const App = () => {
 
     localStorage.setItem("theme", newTheme);
     document.body.classList.toggle("dark-mode");
-
     setIcon(newTheme === "dark" ? "☀️" : "🌙");
   };
 
   useEffect(() => {
-    const scrollBtn = document.getElementById("scrollTopBtn");
-    if (!scrollBtn) return;
-
-    const checkScroll = () => {
-      if (window.scrollY > 300) {
-        scrollBtn.classList.add("show-scroll-btn");
-      } else {
-        scrollBtn.classList.remove("show-scroll-btn");
+    const interval = setInterval(() => {
+      if (window.box && window.box.height) {
+        window.box.height = function () {
+          return document.body.scrollHeight;
+        };
+        clearInterval(interval);
+        console.log("Neko full-height fix applied");
       }
-    };
+    }, 200);
 
-    window.addEventListener("scroll", checkScroll);
-    return () => window.removeEventListener("scroll", checkScroll);
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div>
+      <div className="snowfall-wrapper">
+        <Snowfall color="#82c3d9" snowflakeCount={120} />
+      </div>
+
       <Navbar />
       <Hero />
       <About />
@@ -63,23 +61,18 @@ const App = () => {
       <Contact />
       <Footer />
 
-      <button
-        className="theme-toggle-btn"
-        onClick={toggleTheme}
-        title="Toggle Dark Mode"
-      >
+      <button className="theme-toggle-btn" onClick={toggleTheme}>
         {icon}
       </button>
 
       <div className="visitor-badge">
         👁️ <span>{onlineUsers}</span>
       </div>
-
       <div className="visitor-tooltip">Live Users Online</div>
 
       <button
         id="scrollTopBtn"
-        onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         ⬆
       </button>
