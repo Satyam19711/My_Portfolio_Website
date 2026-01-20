@@ -142,11 +142,11 @@ body:not(.dark-mode) .hero-resume a {
 
 @media (max-width: 768px) {
   .profile-wrapper {
-    margin-top: -300px;
+    margin-top: -150px;
   }
 
   .hero {
-    margin-bottom: -300px;
+    margin-bottom: -150px;
   }
 
   .profile-wrapper img {
