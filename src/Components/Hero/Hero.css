@@ -15,7 +15,8 @@
   overflow: hidden;
   display: inline-block;
 
-  box-shadow: 0 0 25px rgba(180, 21, 255, 0.45),
+  box-shadow:
+    0 0 25px rgba(180, 21, 255, 0.45),
     0 0 60px rgba(223, 137, 8, 0.35);
 
   animation: profileGlow 3s ease-in-out infinite;
@@ -31,11 +32,13 @@
 
 @keyframes profileGlow {
   0% {
-    box-shadow: 0 0 22px rgba(180, 21, 255, 0.4),
+    box-shadow:
+      0 0 22px rgba(180, 21, 255, 0.4),
       0 0 42px rgba(223, 137, 8, 0.3);
   }
   100% {
-    box-shadow: 0 0 36px rgba(180, 21, 255, 0.65),
+    box-shadow:
+      0 0 36px rgba(180, 21, 255, 0.65),
       0 0 60px rgba(223, 137, 8, 0.45);
   }
 }
@@ -59,7 +62,6 @@
   display: inline-block;
   min-width: 420px;
   text-align: left;
-
   color: #b415ff;
   margin-left: 8px;
   padding-right: 6px;
@@ -99,7 +101,9 @@ body:not(.dark-mode) .hero p {
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908, #b415ff);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .hero-connect a {
@@ -121,7 +125,9 @@ body:not(.dark-mode) .hero p {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .hero-resume a:hover {
@@ -136,7 +142,11 @@ body:not(.dark-mode) .hero-resume a {
 
 @media (max-width: 768px) {
   .profile-wrapper {
-    margin-top: 120px;
+    margin-top: -300px;
+  }
+
+  .hero {
+    margin-bottom: -300px;
   }
 
   .profile-wrapper img {

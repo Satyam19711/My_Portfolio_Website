@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   const [icon, setIcon] = useState(
-    localStorage.getItem("theme") === "dark" ? "☀️" : "🌙"
+    localStorage.getItem("theme") === "dark" ? "☀️" : "🌙",
   );
 
   const toggleTheme = () => {
@@ -40,7 +40,6 @@ const App = () => {
           return document.body.scrollHeight;
         };
         clearInterval(interval);
-        console.log("Neko full-height fix applied");
       }
     }, 200);
 
@@ -49,9 +48,9 @@ const App = () => {
 
   return (
     <div>
-      <div className="snowfall-wrapper">
+      {/* <div className="snowfall-wrapper">
         <Snowfall color="#82c3d9" snowflakeCount={120} />
-      </div>
+      </div> */}
 
       <Navbar />
       <Hero />
