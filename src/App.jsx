@@ -9,7 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import useOnlineUsers from "./utils/useOnlineUsers";
 import { logVisitor } from "./utils/logVisitor";
 import { initTheme } from "./utils/theme";
-import Snowfall from "react-snowfall";
+// import Snowfall from "react-snowfall";
 import "./App.css";
 
 const App = () => {
