@@ -92,18 +92,15 @@ const Contact = () => {
               <p>Mirzapur, Uttar Pradesh, India</p>
             </div>
             <div className="contact-detail-icons">
-              <a
-                href="https://www.linkedin.com/in/satyam-maurya-94a750252/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/satyam1919/" target="_blank">
                 <CiLinkedin />
               </a>
 
-              <a href="https://github.com/Satyam19711" target="_blank">
+              <a href="https://github.com/Satyam-19-19" target="_blank">
                 <FaGithubSquare />
               </a>
 
-              <a href="https://www.instagram.com/satyam19711/" target="_blank">
+              <a href="https://www.instagram.com/satyam._1919" target="_blank">
                 <CiInstagram />
               </a>
             </div>

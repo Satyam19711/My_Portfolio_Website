@@ -68,7 +68,7 @@ const Hero = () => {
 
         <div className="hero-resume">
           <a
-            href="https://drive.google.com/file/d/1tfFWKg1GQb5X5n2E5p7Xa_0bYHZ7iTnR/view?usp=sharing"
+            href="https://drive.google.com/file/d/1p3nMnDlSF-HKp8-gAitpdaoObeZL0L_n/view?usp=sharing"
             target="_blank"
           >
             My Resume

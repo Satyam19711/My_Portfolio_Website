@@ -29,7 +29,7 @@ const MyProjects = () => {
             <a href="https://satyam1919-youtube.vercel.app" target="_blank">
               Live link
             </a>
-            <a href="https://github.com/Satyam19711/React_YT" target="_blank">
+            <a href="https://github.com/Satyam-19-19/React_YT" target="_blank">
               Github
             </a>
           </div>
@@ -54,7 +54,7 @@ const MyProjects = () => {
               Live link
             </a>
             <a
-              href="https://github.com/Satyam19711/spotify-clone"
+              href="https://github.com/Satyam-19-19/spotify-clone"
               target="_blank"
             >
               Github
@@ -81,7 +81,7 @@ const MyProjects = () => {
               Live link
             </a>
             <a
-              href="https://github.com/Satyam19711/Satyaveda-Hospital-Full-Stack-App"
+              href="https://github.com/Satyam-19-19/Satyaveda-Hospital-Full-Stack-App"
               target="_blank"
             >
               Github
